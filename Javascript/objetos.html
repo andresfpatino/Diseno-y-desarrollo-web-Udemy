@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objetos en JS</title>
+</head>
+<body>
+
+	<script>
+		// ----- Objetos
+		/*
+		var papa = {
+			nombre: 'Erney',
+			edad: 56,
+			pais: 'Colombia',
+			ciudad: 'Cali',
+			bio: function(){
+				return this.nombre + ' tiene ' + this.edad + ' años';
+			}
+		}
+
+		var mama = {
+			nombre: 'Elsa',
+			edad: 45,
+			pais: 'Colombia',
+			ciudad: 'Cali',
+			bio: function(){
+				return this.nombre + ' tiene ' + this.edad + ' años';
+			}
+		}
+
+		document.write(mama.bio());
+		*/
+	
+
+		// ----- Crear un constructor de objetos		
+		function familiar(nombre, edad, pais){
+			this.nombre = nombre;
+			this.edad = edad;
+			this.pais = pais;
+		}
+
+		// creacion de un nuevo objeto con el constructor
+		var abuela = new familiar('Ligia', 72, 'Colombia');
+
+		document.write(abuela.nombre);
+
+	</script>
+	
+</body>
+</html>

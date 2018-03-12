@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validación de formularios</title>
+	<style type="text/css" media="screen">
+		form{
+			width: 400px;
+			margin: 25px auto;
+			background:#226FC1;
+			padding: 25px;
+			color: #fff;
+		}
+		p{
+			margin:10px 0;
+		}
+		input[type="text"] {
+			width: 95%;
+			margin: 10px 0;
+			padding: 10px;
+			display: block;
+		}
+		input[type="submit"] {
+			background: #2a2a2a;
+			border: none;
+			color: #fff;
+			padding: 15px;
+			margin-top: 15px;
+			width: 100%;
+			text-transform: uppercase;
+			font-family: Arial;
+			cursor: pointer;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<form action="" name="formulario" id="formulario">
+		<input type="text" name="nombre" placeholder="Nombre">
+		<p>
+			<input type="radio" name="sexo" id="hombre">
+			<label for="hombre">Hombre</label>
+			
+			<input type="radio" name="sexo" id="mujer">
+			<label for="mujer">Mujer</label>
+		</p>
+		<p>
+			<input type="checkbox" name="terminos" id="terminos" checked>
+			<label for="terminos">Acepta los terminos de uso</label>
+		</p>	
+		<input type="submit" name="Enviar">
+	</form>
+
+<script type="text/javascript">
+
+	var formulario = document.getElementById('formulario');
+	var nombre = formulario.nombre;
+	var sexo = formulario.sexo;
+	var terminos = formulario.terminos;
+
+	function validar(e){
+
+		// Validar el nombre
+		if (nombre.value > 10) {
+			alert('Maximo de caracteres permitidos');
+			
+		}else if(nombre.value == ''){
+			alert('Ingrese un nombre');
+		}
+
+		// Validamos el sexo
+		if (sexo[0].checked == false && sexo[1].checked == false) {
+			alert('Por favor selecciona un sexo');
+		}
+
+		// Validamos terminos y condiciones
+		if (!terminos.checked) {
+			alert('Acepta los terminos de uso')
+		}
+
+		// Evitamos que se envie el formulario
+		e.preventDefault();
+	}
+
+	formulario.addEventListener('submit', validar);
+
+</script>
+
+</body>
+</html>

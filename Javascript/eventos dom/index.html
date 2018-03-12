@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos</title>
+
+	<style type="text/css" media="screen">
+
+		#btn-caja {
+		    background: #184b81;
+		    color: #fff;
+		    border: none;
+		    padding: 15px;
+		    text-transform: uppercase;
+		    display: block;
+		    border-radius: 3px;
+		    margin: 0 auto;
+		    cursor: pointer;
+		}
+		#contenedor {
+		    margin: auto;
+		    width: 100%;
+		    max-width: 1100px;
+		}
+
+		.caja{
+			width: 200px;
+			height: 200px;
+			cusor:pointer;
+			background: #226fc1;
+			margin:10px;
+			display: inline-block;
+			text-align: center;
+			font-size: 30px;
+			color:#fff;
+			font-family: Arial;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<!-- Modelo basico de eventos -->
+	<!-- <button onclick="saludo()">Saludar con OnClick</button>  -->
+
+	<!-- Modelo estandar  -->
+	<!-- <button id="btn-saludo">Saludar con un eventListener</button>  -->
+
+
+
+<section id="contenedor">
+	<button id="btn-caja">Crear Caja</button>
+</section>
+
+	<script type="text/javascript">
+		/*
+			Existen 3 modelos de eventos diferentes:
+				- Modelo basico de enventos:
+					* Caracteristicas limitadas
+					* Pero funciona en todos los navegadores
+
+				- Modelo de eventos estandar:
+					* Podemos hacer más cosas con el
+					* Todos los navegadores los soportan
+					* Las versiones anteriores de IE7 no lo soportan
+				
+				- Modelo de eventos de IE
+					* Modelo creador por Microsoft exclusivamente para IE
+		 */
+		
+		// function saludo(){
+		// 	alert('Holi');
+		// }
+
+		// function saludo2(){
+		// 	alert('Hola2')
+		// }
+
+		// ----- Modelo estandar
+		/*		
+			var btnSaludo = document.getElementById('btn-saludo');
+			btnSaludo.addEventListener('click', saludo2);
+		*/
+
+
+		function crearCaja(){
+			var contenedor = document.getElementById('contenedor');
+			var caja = document.createElement('div');
+			caja.className = 'caja';
+			contenedor.appendChild(caja);			
+		}
+
+		var btnCaja = document.getElementById('btn-caja');
+		btnCaja.addEventListener('click', crearCaja);
+
+	</script>
+
+
+
+</body>
+</html>

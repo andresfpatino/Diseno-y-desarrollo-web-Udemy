@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-webkit-box-sizing: border-box;
+  -moz-webkit-box-sizing: border-box;
+  -ms-webkit-box-sizing: border-box;
+  -o-webkit-box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: Arial, Sans-serif;
+}
+
+.contenedor {
+  width: 700px;
+  margin: 20px;
+}
+
+header,
+.main,
+aside,
+footer {
+  padding: 20px;
+}
+
+header {
+  background: #0D2C44;
+  color: #fff;
+}
+
+.main {
+  background: #fff;
+  width: 70%;
+  float: left;
+}
+
+aside {
+  background: #bb1f35;
+  color: #fff;
+  width: 30%;
+  float: left;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  background: #0D2C44;
+  color: #fff;
+}

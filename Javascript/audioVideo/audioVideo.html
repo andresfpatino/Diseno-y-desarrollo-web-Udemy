@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Controlando audio y video HTML5 con JS</title>
+</head>
+<body>
+	
+	<video id="video" src="oye.mp4" width="500" controls >
+		<p>Tu navegador no sorporta videos en HTML5, actualizalo</p>
+	</video>
+	<br>
+	<button id="play">Reproducir</button>
+	<button id="pause">Pausar</button>
+	<input type="range" value="1" min='0' max='1' step="0.1" id="volumen">
+
+	<br>
+	<hr>
+	<br>
+
+	<audio src="media/oye.mp3" id="video" controls>
+		<p>Tu navegador no sorporta audio en HTML5, actualizalo</p>
+	</audio>
+	
+	<script>
+
+		// -- Propiedades
+		// 	video.currentTime : Regresa el tiempo actual en el que va el video
+		// 	video.duration: regresa la duracion del video
+		// 	video.ended: regresa si el video ya termino
+		
+		// -- Eventos
+		// pause
+		// play
+
+		var video = document.getElementById('video'),
+			btnPlay = document.getElementById('play'),
+			btnPause = document.getElementById('pause'),
+			volumen = document.getElementById('volumen');
+
+		btnPlay.addEventListener('click', function(){
+			video.play();
+			document.body.style.background = '#000000';
+		});
+
+		btnPause.addEventListener('click', function(){
+			video.pause();
+			document.body.style.background = '#ffffff';
+		});
+
+		volumen.addEventListener('change', function(){
+			video.volume = volumen.value;
+		});
+
+	</script>
+
+</body>
+</html>

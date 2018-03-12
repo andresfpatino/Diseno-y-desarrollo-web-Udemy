@@ -1,0 +1,11 @@
+body { background: #1b3d82; font-family: Arial; }
+
+.articulo { background: #e9f1f7; width: 500px; padding: 20px; }
+
+.articulo .titulo { color: #f9a03f; }
+
+.articulo .autor { color: #0088BF; }
+
+.articulo p a { text-decoration: underline; color: #f9a03f; }
+
+.articulo p a:hover { text-decoration: none; }

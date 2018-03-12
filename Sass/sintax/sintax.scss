@@ -1,0 +1,15 @@
+// esta sintax es más nueva pero utiliza {} y ;
+
+body {
+	background: #f2f2f2;
+}
+
+.articulo {
+	background: #fff;
+	.titulo {
+		color:#000;
+	}
+	.autor {
+		color:#000;
+	}
+}

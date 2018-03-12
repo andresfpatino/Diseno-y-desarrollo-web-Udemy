@@ -1,0 +1,134 @@
+body { background: #f2f2f2; font-family: "Dosis", sans-serif; font-size: 16px; color: #36393a; font-weight: 300; }
+
+.ad { margin-bottom: 1.25em; }
+
+a { color: #0088bf; }
+
+header .logo { padding-top: 1.25em; padding-bottom: 1.25em; }
+
+header .logo a { display: inline-block; }
+
+header .logo img { width: 250px; }
+
+header .redes-sociales { text-align: right; line-height: 2.5em; padding-top: 1.25em; padding-bottom: 1.25em; margin-top: 1.30em; }
+
+header .redes-sociales a { border-radius: 50%; width: 2.5em; height: 2.5em; text-align: center; display: inline-block; color: #fff; margin-left: 1.25em; }
+
+header .redes-sociales a.github { background: #852890; }
+
+header .redes-sociales a.facebook { background: #3b5998; }
+
+header .redes-sociales a.twitter { background: #55acee; }
+
+header .menu { background-color: #0088bf; margin-bottom: 1.25em; }
+
+header .menu ul { list-style: none; overflow: hidden; margin: 0; padding: 0; }
+
+header .menu ul li { float: left; display: inline-block; }
+
+header .menu ul li a { color: #fff; display: inline-block; padding: 1em 1.25em; font-size: 0.95em; }
+
+header .menu ul li a:hover { text-decoration: none; background: #009ddd; }
+
+header .stickytop { position: fixed; top: 0; width: 100%; z-index: 1; }
+
+.main .titulo-seccion h3, .sidebar .titulo-seccion h3 { font-family: "Dosis", sans-serif; font-weight: 700; font-size: 1.5em; color: #3b3b3b; padding-bottom: 0.62em; border-bottom: 4px solid #48b04d; margin-bottom: 1.25em; }
+
+.main .titulo_seccion > div { padding: 0; }
+
+.main .single-post .categorias { margin-bottom: 1em; }
+
+.main .posts .post { margin-bottom: 1.875em; }
+
+.main .posts .post .contenedor { background: #ffffff; box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); }
+
+.main .posts .post .contenedor .thumb img { width: 100%; vertical-align: top; height: auto; }
+
+.main .posts .post .contenedor .info { padding: 1.25em; }
+
+.main .posts .post .contenedor .info .titulo { line-height: 1.125em; margin-bottom: 1.25em; font-size: 1.125em; margin-top: 0; font-weight: 600; }
+
+.main .posts .post .contenedor .info .titulo a { color: #3b3b3b; }
+
+.main .posts .post .contenedor .info .fecha { color: #909090; font-size: 0.875em; margin-bottom: 1.25em; }
+
+.main .posts .post .contenedor .info .extracto { color: #36393a; font-size: 1em; height: 8.125em; max-height: 8.125em; line-height: 1.75em; margin-bottom: 1.25em; overflow: hidden; }
+
+.main .posts .post .contenedor .info .extracto:hover { overflow: auto; }
+
+.main .posts .post .contenedor .info .categorias ul { list-style: none; }
+
+.main .posts .post .contenedor .info .categorias ul li { display: inline-block; }
+
+.main .posts .post .contenedor .info .categorias a { color: #909090; font-size: 1em; font-weight: 600; margin-right: 1.25em; }
+
+.main .posts .post .contenedor .info .categorias a:hover { color: #0088bf; text-decoration: none; }
+
+.main .paginacion ul { list-style: none; overflow: hidden; margin-bottom: 1.25em; padding: 0; font-size: 1em; }
+
+.main .paginacion ul li { float: left; background: #3b3b3b; color: #fff; margin-right: 0.62em; font-size: 1.125em; line-height: 1.125em; }
+
+.main .paginacion ul li.disabled { padding: 0.62em 0.937em; font-size: 1.125em; line-height: 1.125em; }
+
+.main .paginacion ul li a { background: #0088bf; color: #ffffff; line-height: 1.125em; display: inline-block; padding: 0.62em 0.937em; }
+
+.main .paginacion ul li a:hover { background: #009ddd; text-decoration: none; }
+
+.main .paginacion .wp-pagenavi { margin-bottom: 1.25em; }
+
+.main .paginacion .wp-pagenavi .pages, .main .paginacion .wp-pagenavi span { background: #3b3b3b; color: #ffffff; margin-right: 0.62em; font-size: 1.125em; line-height: 1.125em; padding: 0.62em 0.937em; }
+
+.main .paginacion .wp-pagenavi a { background: #0088bf; color: #ffffff; display: inline-block; padding: 0.62em 0.937em; margin-right: 0.62em; }
+
+.main .paginacion .wp-pagenavi a:hover { background: #009ddd; text-decoration: none; }
+
+.sidebar .widget { margin-bottom: 2.5em; }
+
+.sidebar .widget.redes-sociales { overflow: hidden; }
+
+.sidebar .widget.redes-sociales a { color: #fff; width: 33.3333%; padding: 1.25em; text-align: center; display: inline-block; float: left; }
+
+.sidebar .widget.redes-sociales a:hover { text-decoration: none; }
+
+.sidebar .widget.redes-sociales a.github { background: #852890; }
+
+.sidebar .widget.redes-sociales a.facebook { background: #3b5998; }
+
+.sidebar .widget.redes-sociales a.twitter { background: #00abf0; }
+
+.sidebar .widget.redes-sociales a .icono { width: 100%; font-size: 1.875em; margin-bottom: 0.5em; }
+
+.sidebar .widget.boletin .formulario { background: #0e2b37; padding: 1.25em; text-align: center; }
+
+.sidebar .widget.boletin .formulario label { color: #fff; margin-bottom: 0.5em; display: block; font-size: 1.4em; font-weight: 200; }
+
+.sidebar .widget.boletin .formulario input[type="email"], .sidebar .widget.boletin .formulario input[type="text"] { color: #909090; text-align: center; padding: 0.65em; font-size: 1.125em; border-radius: 3px; width: 100%; border: none; margin-bottom: 0.5em; }
+
+.sidebar .widget.boletin .formulario input[type="submit"] { background: #48b04d; border-radius: 3px; padding: 0.625em 1.875em; border: none; color: #fff; margin-top: 1em; }
+
+.sidebar .widget .contenedor-ad { text-align: center; }
+
+.sidebar .widget .contenedor-ad a { display: inline-block; }
+
+footer .menu { background: #0088bf; }
+
+footer .menu ul { list-style: none; overflow: hidden; margin: 0; padding: 0; }
+
+footer .menu ul li { float: left; display: inline-block; }
+
+footer .menu ul li a { color: #fff; display: inline-block; padding: 1em 1.25em; font-size: 0.95em; }
+
+footer .menu ul li a:hover { text-decoration: none; background: #009ddd; }
+
+footer .copyright p { font-size: 0.87em; color: #000; padding: 0.625em; text-align: center; margin: 0; }
+
+footer .copyright a { color: #0088bf; }
+
+@media screen and (max-width: 768px) { header .logo { text-align: center; }
+  header .redes-sociales { display: none; }
+  header .menu ul { text-align: center; }
+  header .menu ul li { float: none; }
+  .main .posts .post .contenedor .info .extracto { height: auto; }
+  .sidebar { display: none; }
+  footer .menu ul { text-align: center; }
+  footer .menu ul li { float: none; } }

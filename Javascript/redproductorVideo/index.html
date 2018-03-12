@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reproductor de video JS</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="contenedor">
+		<div class="reproductor">
+			<video src="intro.mp4" class="video" id="video">
+				<p>El navegador no soporta <code>Videos HTML5</code> </p>
+			</video>
+			<div class="controles">
+				<a href="https://andresf1395.github.io/Personal_website/" target="blank"><img class="brand" title="Andrés F. Patiño | Diseñador Multimedial" src="https://andresf1395.github.io/Personal_website/img/logo.png" alt="Marca personal"></a>
+				<input type="range" class="tiempo" id="tiempo" min="0" value="0" max="" step="0.1">
+				<button class="btn play" id="btnPlay" title="Reproducir / pausar"><span id="icono" class="fa fa-play"></span></button>				
+				<div class="time">
+					<span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+				</div>	
+				<div class="control-volumen">
+					<span class="fa fa-volume-up ico-volumen" id="mute" title="Silenciar"></span>
+					<input type="range" class="volumen" id="volumen" min="0" max="1" value="1" step="0.01">			
+				</div>							
+				<span class="fa fa-arrows-alt fullScreen" id="fullscreenbtn" title="Pantalla completa"></span>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
